@@ -14,6 +14,7 @@ export class ItemsService{
         const item = new Item();
         item.collar = createItemDtos.collar;
         item.shirt = createItemDtos.shirt;
+        item.Catid = createItemDtos.Catid ;
         return item.save();
     }
 

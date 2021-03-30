@@ -18,6 +18,7 @@ export class Item extends Model {
     @Column
     Catid : number ;
 
-    @BelongsTo(()=>Cat , 'Catid')
+    //@BelongsTo(()=>Cat , {targetKey: 'id' , foreignKey: 'Catid'} )
+    @BelongsTo(()=>Cat)
     cat : Cat ;
   }
